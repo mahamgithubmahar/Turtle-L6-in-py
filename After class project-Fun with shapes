@@ -1,0 +1,28 @@
+import turtle
+
+turtle.Screen().bgcolor("Blue")
+turtle.Screen().setup(1200,400)
+turtle.color("Pink")
+board=turtle.Turtle()
+for i in range(4):
+    board.forward(150)
+    board.left(90)
+    i+=1
+board.penup()
+board.forward(250)
+board.pendown()
+for i in range(6):
+    board.forward(100)
+    board.left(60)
+    i+=1
+board.penup()
+board.forward(180)
+board.pendown()
+board.color("yellow")
+turtle.begin_fill()
+for i in range(3):
+    board.forward(100)
+    board.left(120)
+    i+=1
+turtle.end_fill()
+turtle.done()
